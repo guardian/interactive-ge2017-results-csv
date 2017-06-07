@@ -1,0 +1,16 @@
+{
+  "name": "electionjsonconverter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getcsv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.62.0",
+    "fetch": "^1.1.0",
+    "xr": "^0.3.0"
+  }
+}

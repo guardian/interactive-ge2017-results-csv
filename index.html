@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    </head>
+
+<body></body>
+
+<script>
+        
+var xhr = new XMLHttpRequest;
+
+xhr.open('GET','https://interactive.guim.co.uk/2017/06/ukelection2017-data/snap/full.json',false);
+xhr.send();
+
+var data = JSON.parse(xhr.responseText);
+console.log(data);
+data.forEach(function(s){
+    console.log(s)
+    s.candidates.forEach(function(c){    
+    var line = `<p>${s.name},${s.ons},${c.party},${c.percentageShare}</p>`
+    var bodylist = document.querySelector("body");
+    bodylist.innerHTML = bodylist.innerHTML += line;
+    })
+
+})
+    </script>
+
+
+</html>
