@@ -7,7 +7,7 @@ var AWS = require('aws-sdk');
 var s3 = new AWS.S3();
 
 
-fetch('https://interactive.guim.co.uk/2017/06/ukelection2017-data/snap/full.json',function(error,meta,body){
+fetch('https://interactive.guim.co.uk/2019/12/ukelection2019-data/prod/snap/full.json',function(error,meta,body){
 
 var data = JSON.parse(body);
 data.forEach(function(s){
@@ -27,7 +27,7 @@ console.log(bodylist);
         ACL: "public-read",
         Body: bodylist,
         CacheControl: "max-age=30",
-        Bucket: "gdn-cdn/2017/06/general-election",
+        Bucket: "gdn-cdn/2019/12/general-election",
         Key: "allresults.csv",
         ContentType: "text/plain"
     }

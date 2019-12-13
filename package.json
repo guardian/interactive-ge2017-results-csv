@@ -4,12 +4,14 @@
   "description": "",
   "main": "getcsv.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "getcsv": "./node_modules/.bin/babel-node getcsv"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.62.0",
+    "babel-node": "0.0.1-security",
     "fetch": "^1.1.0",
     "xr": "^0.3.0"
   }

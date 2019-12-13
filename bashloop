@@ -1,0 +1,9 @@
+#! bash
+
+while true
+do
+
+node getcsv.js
+sleep 600
+
+done
