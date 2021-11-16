@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.62.0",
+    "aws-sdk": "^2.814.0",
     "babel-node": "0.0.1-security",
     "fetch": "^1.1.0",
     "xr": "^0.3.0"
